@@ -28,7 +28,9 @@ const Cooks = ({ searchMeal }) => {
   return (
     <ul>
       {dataCooks &&
-        dataCooks.map((cook) => <Cards key={cook.idMeal} cook={cook} />)}
+        dataCooks
+          .slice(0, 24)
+          .map((cook) => <Cards key={cook.idMeal} cook={cook} />)}
     </ul>
   );
 };

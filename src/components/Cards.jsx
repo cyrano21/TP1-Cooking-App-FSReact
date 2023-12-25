@@ -4,7 +4,7 @@ const Cards = ({ cook }) => {
     <li className="card">
       <h3>{cook.strMeal}</h3>
       <p>origin : {cook.strArea}</p>
-      <img src={cook.strMealThumb} alt="" />
+      <img src={cook.strMealThumb} alt={"Photo de " + cook.strMeal} />
       <p>{cook.strInstructions}</p>
     </li>
   );
